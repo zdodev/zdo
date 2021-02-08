@@ -10,7 +10,8 @@ class HomeViewController: UIViewController {
     
     private func handleNotAuthenticated() {
         // Check auth status
-        if Auth.auth().currentUser == nil {
+        let currentUser = Auth.auth().currentUser
+        if currentUser == nil {
             // Show log in
             let loginVC = LoginViewController()
             loginVC.modalPresentationStyle = .fullScreen
