@@ -27,6 +27,10 @@
 		4102723125CECE1300E8B4C9 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4102723025CECE1300E8B4C9 /* SearchResultViewController.swift */; };
 		4102723425CECE4700E8B4C9 /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4102723325CECE4700E8B4C9 /* PostEditorViewController.swift */; };
 		4102723725CECE6200E8B4C9 /* PublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4102723625CECE6200E8B4C9 /* PublishViewController.swift */; };
+		4104FADB25D402C000FD2EA1 /* IGFeedPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4104FADA25D402C000FD2EA1 /* IGFeedPostTableViewCell.swift */; };
+		4104FADF25D4042E00FD2EA1 /* IGFeedPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4104FADE25D4042E00FD2EA1 /* IGFeedPostHeaderTableViewCell.swift */; };
+		4104FAE325D4044E00FD2EA1 /* IGFeedPostActionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4104FAE225D4044E00FD2EA1 /* IGFeedPostActionsTableViewCell.swift */; };
+		4104FAE625D4047800FD2EA1 /* IGFeedPostGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4104FAE525D4047800FD2EA1 /* IGFeedPostGeneralTableViewCell.swift */; };
 		410B825A25CF82A100F27CFC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 410B825925CF82A100F27CFC /* GoogleService-Info.plist */; };
 		410B825F25CF898900F27CFC /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410B825E25CF898900F27CFC /* DatabaseManager.swift */; };
 		410B826225CF8A1900F27CFC /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410B826125CF8A1900F27CFC /* AuthManager.swift */; };
@@ -59,6 +63,10 @@
 		4102723025CECE1300E8B4C9 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		4102723325CECE4700E8B4C9 /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
 		4102723625CECE6200E8B4C9 /* PublishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishViewController.swift; sourceTree = "<group>"; };
+		4104FADA25D402C000FD2EA1 /* IGFeedPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostTableViewCell.swift; sourceTree = "<group>"; };
+		4104FADE25D4042E00FD2EA1 /* IGFeedPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		4104FAE225D4044E00FD2EA1 /* IGFeedPostActionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostActionsTableViewCell.swift; sourceTree = "<group>"; };
+		4104FAE525D4047800FD2EA1 /* IGFeedPostGeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostGeneralTableViewCell.swift; sourceTree = "<group>"; };
 		410B825925CF82A100F27CFC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		410B825E25CF898900F27CFC /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		410B826125CF8A1900F27CFC /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
@@ -122,6 +130,7 @@
 		4102720525CEBFC500E8B4C9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4104FAD925D4029500FD2EA1 /* Cells */,
 				410271F825CEBEAD00E8B4C9 /* Assets.xcassets */,
 				4102720825CEC01700E8B4C9 /* Storyboards */,
 			);
@@ -186,6 +195,25 @@
 				4102721E25CEC18F00E8B4C9 /* RegistrationViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		4104FAD925D4029500FD2EA1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4104FADD25D4041000FD2EA1 /* Home Feed */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4104FADD25D4041000FD2EA1 /* Home Feed */ = {
+			isa = PBXGroup;
+			children = (
+				4104FADA25D402C000FD2EA1 /* IGFeedPostTableViewCell.swift */,
+				4104FADE25D4042E00FD2EA1 /* IGFeedPostHeaderTableViewCell.swift */,
+				4104FAE225D4044E00FD2EA1 /* IGFeedPostActionsTableViewCell.swift */,
+				4104FAE525D4047800FD2EA1 /* IGFeedPostGeneralTableViewCell.swift */,
+			);
+			path = "Home Feed";
 			sourceTree = "<group>";
 		};
 		410B825C25CF870100F27CFC /* General */ = {
@@ -341,19 +369,23 @@
 				410271F425CEBEAD00E8B4C9 /* HomeViewController.swift in Sources */,
 				4102721F25CEC18F00E8B4C9 /* RegistrationViewController.swift in Sources */,
 				4102723425CECE4700E8B4C9 /* PostEditorViewController.swift in Sources */,
+				4104FADF25D4042E00FD2EA1 /* IGFeedPostHeaderTableViewCell.swift in Sources */,
 				4102722225CECD6D00E8B4C9 /* PostViewController.swift in Sources */,
 				410B826525CF8A6000F27CFC /* StorageManager.swift in Sources */,
 				4102721225CEC0B000E8B4C9 /* NotificationsViewController.swift in Sources */,
 				410B825F25CF898900F27CFC /* DatabaseManager.swift in Sources */,
 				4102723125CECE1300E8B4C9 /* SearchResultViewController.swift in Sources */,
+				4104FADB25D402C000FD2EA1 /* IGFeedPostTableViewCell.swift in Sources */,
 				4102721C25CEC16D00E8B4C9 /* LoginViewController.swift in Sources */,
 				4102722E25CECDEC00E8B4C9 /* SearchViewController.swift in Sources */,
 				410B827C25CFCCB000F27CFC /* Extensions.swift in Sources */,
+				4104FAE625D4047800FD2EA1 /* IGFeedPostGeneralTableViewCell.swift in Sources */,
 				4102721525CEC0C600E8B4C9 /* ProfileViewController.swift in Sources */,
 				410271F025CEBEAD00E8B4C9 /* AppDelegate.swift in Sources */,
 				410B826225CF8A1900F27CFC /* AuthManager.swift in Sources */,
 				410271F225CEBEAD00E8B4C9 /* SceneDelegate.swift in Sources */,
 				4102723725CECE6200E8B4C9 /* PublishViewController.swift in Sources */,
+				4104FAE325D4044E00FD2EA1 /* IGFeedPostActionsTableViewCell.swift in Sources */,
 				4102722B25CECDDB00E8B4C9 /* ListViewController.swift in Sources */,
 				4102722825CECDB500E8B4C9 /* SettingsViewController.swift in Sources */,
 			);
