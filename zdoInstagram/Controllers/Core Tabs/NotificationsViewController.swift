@@ -3,7 +3,6 @@ import UIKit
 class NotificationsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     private let tableView: UITableView = {
         let tableView = UITableView()
-        tableView.register(UITableView.self, forCellReuseIdentifier: "cell")
         return tableView
     }()
     
@@ -27,7 +26,6 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        return cell
+        UITableViewCell()
     }
 }
