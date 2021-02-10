@@ -198,7 +198,7 @@ class LoginViewController: UIViewController {
     }
     
     @objc private func didTapTermsButton() {
-        guard let url = URL(string: "https://help.instagram.com/1215086795543252 ") else {
+        guard let url = URL(string: "https://help.instagram.com/1215086795543252") else {
             return
         }
         let vc = SFSafariViewController(url: url)
